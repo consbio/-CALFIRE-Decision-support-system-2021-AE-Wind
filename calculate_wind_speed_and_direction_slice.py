@@ -59,12 +59,12 @@ u10_da = u10_ds["u10"]
 v10_da = v10_ds["v10"]
 
 # Pre-Fire Dates
-start_time = '2020-08-28T00:00:00'
-end_time = '2020-08-31T23:00:00'
+#start_time = '2020-08-28T00:00:00'
+#end_time = '2020-08-31T23:00:00'
 
 # Post-Fire Dates
-#start_time = '2021-08-28T00:00:00'
-#end_time = '2021-08-31T23:00:00'
+start_time = '2021-08-28T00:00:00'
+end_time = '2021-08-31T23:00:00'
 
 timestamps = pandas.date_range(start_time, end_time, freq='H')
 
