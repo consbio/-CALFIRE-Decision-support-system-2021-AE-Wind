@@ -3,6 +3,7 @@
 # Author: Mike Gough
 # Date created: 10/11/2023
 # Python Version: 3.x
+#
 # Description: Creates 3km hourly wind speed and wind direction rasters from UCLA WRF downscaled climate data
 # (u10 and v10) acquired from the Analytics Engine Server (https://analytics.cal-adapt.org/data) for a given date range.
 # u10 = West-East component of Wind at 10m
@@ -12,10 +13,11 @@
 # https://github.com/cal-adapt/climakitae/blob/main/climakitae/tools/derived_variables.py#L228
 # This script produces three different versions of each variable (wind speed/wind direction) which are written to
 # the following 3 directories:
+#
 # 1_orig: original wind speed (ws) and wind direction (wd) data calculated directly from u10 and v10.
 # 2_clip: ws and wd clipped to the SSN study area
 # 3_proj: ws and wd projected to UTM zone 10N (to match the CFO data)
-
+#
 # Duration: ~ 14 mins for each hour of data.
 # Based on current data (4 days before and after each fire): ~1.87 days
 # 8 days * 24 hours * 14 mins per hour = 2,688 mins = 1.87 days)
